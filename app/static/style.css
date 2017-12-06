@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+    background-image: url('images/empty-plate.jpg');
+    background-attachment: fixed;
+    background-size:100% auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.colorSpan {
+    color: #338aac;
+}
+.about {
+    font-size: 18px;
+}
+
+.btn-custom {
+    width: 300px;
+    /*border: 2px solid gray;*/
+    background-color: #338aac;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.btn-custom:active, .btn-custom:focus, .btn-custom:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #338aac;
+    border: 2px solid #338aac;
+}
+
+.btn-custom:active a, .btn-custom:focus a, .btn-custom:hover a {
+    color: #338aac;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+
+.btn-custom a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: white;
+    line-height: 50px;
+    text-decoration: none;
+    width: 300px;
+}
+
+
+.questions {
+    background-color: transparent;
+
+    height: 350px;
+}
+
+.banner {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.question-button {
+    width: 175px;
+    margin-top: 25px;
+    background-color: #338aac;
+    height: 35px;
+    text-align: center;
+    border: 2px solid white;
+    padding: 0;
+}
+
+.question-button p, .question-button a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.question-button:focus, .question-button:active, .question-button:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #338aac;
+    border: 2px solid #338aac;
+}
+
+.question-button:focus a, .question-button:active a, .question-button:hover a, .question-button:focus p, .question-button:active p, .question-button:hover p {
+    outline: none;
+    text-decoration: none;
+    color: #338aac;
+}
+
+
+form {
+    margin-top: 25px;
+}
+
+.categories {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    margin: auto;
+}
+
+.lastSection {
+    margin-top: 25px;
+}
+
+.lastButton {
+    margin-top: 5px;
+}
+
+#notify {
+    margin-top: 25px;
+}
+
+#price {
+    margin: auto;
+    visibility: hidden;
+}
+
+#toDistRange {
+    margin: auto;
+    visibility: hidden;
+}
+
+#toPriceRatings {
+    margin: auto;
+    visibility: visible;
+}
+
+#confirm {
+    margin: auto;
+    visibility: hidden;
+}
+
+#beforeRange {
+    margin-bottom: 40px;
+}
+
+.range-output {
+    margin-top: 20px;
+    color: black;
+    font-size: 32px;
+}
+
+.display {
+    display: inline-block;
+    margin-top: 15px;
+}
+.buttons {
+    margin: auto;
+    width: 900px;
+    text-align: center;
+    height: 100;
+}
+
+select {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    width: 150px;
+    background-color: #338aac;
+    color: white;
+}
+
+.resultPanel {
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    height: 180px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+.resultPanel:hover {
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid blue;
+}
+
+
+
+.yelpImage {
+    height: 160px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.imgPanel {
+    width: 20%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.resultPanel h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.half {
+    margin: 0;
+    float: right;
+    width: 80%;
+    height: 160px;
+}
+
+.panel:hover {
+    color: black;
+}
+.panel {
+    text-decoration: none;
+    color: black;
+    width: 900px;
+}
+
+.yelp {
+    height: 75px;
+    width: 500px;
+    margin-bottom: 0px;
+}
+
+.stars {
+    width: 105px;
+    height: 20px;
+}

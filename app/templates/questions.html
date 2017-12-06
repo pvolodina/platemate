@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>PlateMate!</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="icon" type="image/png" href="../static/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../static/images/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css"/>
+
+    <link rel="stylesheet" type="text/css" href="../static/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="../static/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../static/rangeslider.css" type = "text/css"/>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../static/slick/slick.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/rangeslider.min.js"></script>
+    <script type="text/javascript" src="../static/js/flow.js"></script>
+    <script type="text/javascript" src="../static/js/data.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5rfGd9Jb3v9dNcaO-BwYn7jQ2ogWT-c4"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <a href="/index"><img src="../static/images/platemate-expanded.png" class="banner center-block img-responsive"/></a>
+            </div>
+            <div>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="questions">
+
+                    <div>
+                        <h2 class="text-center">Welcome to <b><span class="colorSpan">PlateMate</span></b>!</h2>
+                        <h3 class="text-center">Enter your 5 digit <span class="colorSpan">zip code</span>.</h3>
+                        <form class="text-center">
+                            <input id="zipform" type="text" name="zipcode"/>
+                        </form>
+                        <div align="center">
+                            <button id="getLocation" class="question-button" role="button">
+                                <p>Submit</p>
+                            </button>
+
+                            <button id="findMe" class="question-button" role="button">
+                                <p>Find Me</p>
+                            </button>
+                        </div>
+                        <div>
+                            <h4 id="notify" class="text-center">Or click <span class="colorSpan"><b>Find Me</b></span> to get your current location.</h4>
+                            <button id="toDistRange" class="next question-button center-block" role="button">
+                                <p>Continue -></p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 id="beforeRange" class="text-center">Enter the range of your search in <span class="colorSpan">miles</span>.</h3>
+                        <input
+                            id="distance"
+                            type="range"
+                            min="1"
+                            max="25"
+                            step="1"
+                            value="10"
+                            data-orientation="horizontal"
+                        >
+                        <button id="toCategories" class="next question-button center-block" role="button">
+                                <p>Continue -></p>
+                        </button>
+                    </div>
+
+                    <div>
+                        <h3 class="text-center">What are you in the <span class="colorSpan">mood</span> for?</h3>
+                        <br>
+                        <h4 class="text-center">Type out a <span class="colorSpan">category</span> to narrow down your search.</h4>
+                        <br>
+                        <form class="text-center categories">
+                            <input id="categories" class="categories" type="text" name="categories"/>
+                        </form>
+
+                        <h4 class="text-center">Also, select a price range below:</h4>
+                        <br>
+                        <p class="text-center">
+                            <select id="price">
+                                <option value="1">Low ($-$$)</option>
+                                <option value="2" selected>Medium ($$-$$$)</option>
+                                <option value="3">High ($$$-$$$$)</option>
+                            </select>
+                        </p>
+                        <br>
+
+                        <button id="toResults" class="question-button lastButton center-block" role="button">
+                                <p>Submit!</p>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
